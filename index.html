@@ -46,7 +46,87 @@
         <section class="hero overlay-hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button-hero primary pointer">Заказать услугу</button>
+                <button type="button" class="button-hero primary pointer" data-modal-open>Заказать услугу</button>
+
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <p>
+                            <!-- Україно, свята мати героїв, зійди до серця мого,
+                            прилинь бурею вітрів кавказьких,
+                            
+                            шумом карпатських ручаїв,
+                            
+                            боїв славного завойовника батька Хмеля,
+                            
+                            тріумфом і гуком гармат революцій,
+                            
+                            радісним гомоном Софійських дзвонів.
+                            
+                            
+                            Нехай душа моя в тобі відродиться,
+                            
+                            славою твоєю опроміниться,
+                            
+                            бо ти, Пресвята, все життя моє,
+                            
+                            бо ти все щастя моє.
+                            
+                            
+                            Задзвени мені брязкотом кайданів,
+                            
+                            скрипом шибениць в похмурі ранки,
+                            
+                            принеси мені зойки катованих у льохах,
+                            
+                            у тюрмах і на засланнях.
+                            
+                            Щоб віра моя була гранітом,
+                            
+                            щоб росла завзяттям міць,
+                            
+                            щоб сміло йшов я в бій,
+                            
+                            так, як йшли герої за тебе, Свята,
+                            
+                            за твою славу, за твої святі ідеї.
+                            
+                            Щоб помстити ганьбу неволі,
+                            
+                            потоптану честь, глум катів твоїх,
+                            
+                            невинну кров помордованих дітей твоїх,
+                            
+                            величну смерть героїв української нації
+                            
+                            і тисяч інших незнаних нами,
+                            
+                            що їх кості порозкидані або тайком поховані.
+                            
+
+                            Спали вогнем життєтворчим всю кволість у серці моєму,
+                            
+                            страху нехай не знаю я, й не знаю що таке вагання.
+                            
+                            Скріпи мій дух, загартуй волю,
+                            
+                            в серці замешкай моєму, зрости мене до ясних чинів.
+                            
+                            для тебе в чинах нехай знайду я смерть,
+                            
+                            солодку смерть в муках за тебе.
+                            
+                            і розпливуся в тобі та вічно житиму в тобі,
+                            
+                            
+                            Відвічна Україно: свята , могутня і соборна! -->
+                        </p>
+                        <button data-modal-close class="modal-close">
+                            <svg class="modal-icon" width="11" height="11">
+                                <use href="./images/symbol-defs.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -57,7 +137,7 @@
                 
                 <ul class="features list">
                     <li class="features-item">
-                        <div class="features-box" aria-label="antenna">
+                        <div class="features-box">
                             <svg width="65.32" height="70">
                                 <use href="./images/symbol-defs.svg#antenna-1"></use>
                             </svg>
@@ -66,7 +146,7 @@
                         <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="features-item">
-                        <div class="features-box" aria-label="clock">
+                        <div class="features-box">
                             <svg width="66.96" height="70">
                                 <use href="./images/symbol-defs.svg#clock-1"></use>
                             </svg>
@@ -75,7 +155,7 @@
                         <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="features-item">
-                        <div class="features-box" aria-label="diagram">
+                        <div class="features-box">
                             <svg width="70" height="53.69">
                                 <use href="./images/symbol-defs.svg#diagram-1"></use>
                             </svg>
@@ -84,7 +164,7 @@
                         <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="features-item">
-                        <div class="features-box" aria-label="astronaut">
+                        <div class="features-box">
                             <svg width="54.83" height="60.66">
                                 <use href="./images/symbol-defs.svg#astronaut-1"></use>
                             </svg>
@@ -102,9 +182,24 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 
                 <ul class="services list">
-                    <li class="services-item"><img src="./images/img1.jpg" alt="Десктопные приложения" width="370"></li>
-                    <li class="services-item"><img src="./images/img2.jpg" alt="Мобильные приложения" width="370"></li>
-                    <li class="services-item"><img src="./images/img3.jpg" alt="Дизайнерские решения" width="370"></li>
+                    <li class="services-item">
+                        <img src="./images/img1.jpg" alt="Десктопные приложения" width="370">
+                        <div class="services-thumb">
+                            <p class="services-description">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="services-item">
+                        <img src="./images/img2.jpg" alt="Мобильные приложения" width="370">
+                        <div class="services-thumb">
+                            <p class="services-description">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="services-item">
+                        <img src="./images/img3.jpg" alt="Дизайнерские решения" width="370">
+                        <div class="services-thumb">
+                            <p class="services-description">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -116,34 +211,34 @@
                 
                 <ul class="workers list">
                     <li class="workers-item">
+                        <img src="./images/img4.jpg" alt="Product Designer" width="270">
                         <div class="workers-cards">
-                            <img src="./images/img4.jpg" alt="Product Designer" width="270">
                             <h3 class="workers-title">Игорь Демьяненко</h3>
                             <p class="workers-text">Product Designer</p>
-                            <ul class="social-link list">
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="instagram">
+                            <ul class="workers-social list">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="instagram">
                                         <svg class="workers-icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#instagram-2"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="twitter">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="twitter">
                                         <svg class="workers-icon" width="20" height="16.25">
                                             <use href="./images/symbol-defs.svg#twitter-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="facebook">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="facebook">
                                         <svg class="workers-icon" width="10" height="20">
                                             <use href="./images/symbol-defs.svg#facebook-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="linkedin">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="linkedin">
                                         <svg class="workers-icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#linkedin-1"></use>
                                         </svg>
@@ -153,34 +248,34 @@
                         </div>
                     </li>
                     <li class="workers-item">
+                        <img src="./images/img5.jpg" alt="Frontend Developer" width="270">
                         <div class="workers-cards">
-                            <img src="./images/img5.jpg" alt="Frontend Developer" width="270">
                             <h3 class="workers-title">Ольга Репина</h3>
                             <p class="workers-text"> Frontend Developer</p>
-                            <ul class="social-link list">
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="instagram">
+                            <ul class="workers-social list">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="instagram">
                                         <svg class="workers-icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#instagram-2"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="twitter">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="twitter">
                                         <svg class="workers-icon" width="20" height="16.25">
                                             <use href="./images/symbol-defs.svg#twitter-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="facebook">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="facebook">
                                         <svg class="workers-icon" width="10" height="20">
                                             <use href="./images/symbol-defs.svg#facebook-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="linkedin">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="linkedin">
                                         <svg class="workers-icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#linkedin-1"></use>
                                         </svg>
@@ -190,34 +285,34 @@
                         </div>
                     </li>
                     <li class="workers-item">
+                        <img src="./images/img6.jpg" alt="Marketing" width="270">
                         <div class="workers-cards">
-                            <img src="./images/img6.jpg" alt="Marketing" width="270">
                             <h3 class="workers-title">Николай Тарасов</h3>
                             <p class="workers-text">Marketing</p>
-                            <ul class="social-link list">
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="instagram">
+                            <ul class="workers-social list">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="instagram">
                                         <svg class="workers-icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#instagram-2"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="twitter">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="twitter">
                                         <svg class="workers-icon" width="20" height="16.25">
                                             <use href="./images/symbol-defs.svg#twitter-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="facebook">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="facebook">
                                         <svg class="workers-icon" width="10" height="20">
                                             <use href="./images/symbol-defs.svg#facebook-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="linkedin">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="linkedin">
                                         <svg class="workers-icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#linkedin-1"></use>
                                         </svg>
@@ -227,34 +322,34 @@
                         </div>
                     </li>
                     <li class="workers-item">
+                        <img src="./images/img7.jpg" alt="UI Designer" width="270">
                         <div class="workers-cards">
-                            <img src="./images/img7.jpg" alt="UI Designer" width="270">
                             <h3 class="workers-title">Михаил Ермаков</h3>
                             <p class="workers-text">UI Designer</p>
-                            <ul class="social-link list">
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="instagram">
+                            <ul class="workers-social list">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="instagram">
                                         <svg class="workers-icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#instagram-2"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="twitter">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="twitter">
                                         <svg class="workers-icon" width="20" height="16.25">
                                             <use href="./images/symbol-defs.svg#twitter-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="facebook">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="facebook">
                                         <svg class="workers-icon" width="10" height="20">
                                             <use href="./images/symbol-defs.svg#facebook-1"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./index.html" class="workers-link" aria-label="linkedin">
+                                <li class="social-link">
+                                    <a href="./index.html" class="workers-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="linkedin">
                                         <svg class="workers-icon" width="20" height="20">
                                             <use href="./images/symbol-defs.svg#linkedin-1"></use>
                                         </svg>
@@ -273,115 +368,106 @@
                 <h2 class="section-title">Постоянные клиенты</h2>
 
                 <ul class="customers list">
-                    <a href="./index.html" class="customers-link" aria-label="client-1">
-                        <li>
-                            <div class="customers-logo">
+                    <li class="customers-link">
+                        <a href="./index.html" class="customers-logo" target="_blank" rel="noopener noreferrer nofolow" aria-label="client-1">
                                 <svg class="customers-icon" width="41" height="46.7">
                                     <use href="./images/symbol-defs.svg#client-1"></use>
                                 </svg>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="./index.html" class="customers-link" aria-label="client-2">
-                        <li>
-                            <div class="customers-logo">
-                                <svg class="customers-icon" width="40" height="52">
-                                    <use href="./images/symbol-defs.svg#client-2"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="./index.html" class="customers-link" aria-label="client-3">
-                        <li>
-                            <div class="customers-logo">
-                                <svg class="customers-icon" width="43.46" height="41.18">
-                                    <use href="./images/symbol-defs.svg#client-3"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="./index.html" class="customers-link" aria-label="client-4">
-                        <li>
-                            <div class="customers-logo">
-                                <svg class="customers-icon" width="84.44" height="40.62">
-                                    <use href="./images/symbol-defs.svg#client-4"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="./index.html" class="customers-link" aria-label="client-5">
-                        <li>
-                            <div class="customers-logo">
-                                <svg class="customers-icon" width="62.54" height="45.43">
-                                    <use href="./images/symbol-defs.svg#client-5"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="./index.html" class="customers-link" aria-label="client-6">
-                        <li>
-                            <div class="customers-logo">
-                                <svg class="customers-icon" width="93.79" height="43.93">
-                                    <use href="./images/symbol-defs.svg#client-6"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
+                    <li class="customers-link">
+                        <a href="./index.html" class="customers-logo" target="_blank" rel="noopener noreferrer nofolow" aria-label="client-2">
+                            <svg class="customers-icon" width="40" height="52">
+                                <use href="./images/symbol-defs.svg#client-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-link">
+                        <a href="./index.html" class="customers-logo" target="_blank" rel="noopener noreferrer nofolow" aria-label="client-3">
+                            <svg class="customers-icon" width="43.46" height="41.18">
+                                <use href="./images/symbol-defs.svg#client-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-link">
+                        <a href="./index.html" class="customers-logo" target="_blank" rel="noopener noreferrer nofolow" aria-label="client-4">
+                            <svg class="customers-icon" width="84.44" height="40.62">
+                                <use href="./images/symbol-defs.svg#client-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-link">
+                        <a href="./index.html" class="customers-logo" target="_blank" rel="noopener noreferrer nofolow" aria-label="client-5">
+                            <svg class="customers-icon" width="62.54" height="45.43">
+                                <use href="./images/symbol-defs.svg#client-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-link">
+                        <a href="./index.html" class="customers-logo" target="_blank" rel="noopener noreferrer nofolow" aria-label="client-6">
+                            <svg class="customers-icon" width="93.79" height="43.93">
+                                <use href="./images/symbol-defs.svg#client-6"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
     </main>
 
     <!-- Футер -->
-    <footer class="footer overlay-footer">
-        <div class="adress-bloc">
-            <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+    <footer class="footer">
+        <div class="footer-bloc container">
+            <div class="adress-bloc">
+                <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
             
-            <address>
-                <ul class="adress-footer list">
-                    <li class="footer-item">
-                        <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
+                <address>
+                    <ul class="adress-footer list">
+                        <li class="footer-item">
+                            <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
+                        </li>
+                        <li class="footer-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                        <li class="footer-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            
+            <div class="social-bloc">
+                <p class="footer-text">присоединяйтесь</p>
+            
+                <ul class="footer-social list">
+                    <li class="social-item">
+                        <a href="./index.html" class="footer-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="instagram">
+                            <svg class="workers-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#instagram-2"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="footer-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li class="footer-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    <li class="social-item">
+                        <a href="./index.html" class="footer-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="twitter">
+                            <svg class="workers-icon" width="20" height="16.25">
+                                <use href="./images/symbol-defs.svg#twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="./index.html" class="footer-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="facebook">
+                            <svg class="workers-icon" width="10" height="20">
+                                <use href="./images/symbol-defs.svg#facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="./index.html" class="footer-link" target="_blank" rel="noopener noreferrer nofolow" aria-label="linkedin">
+                            <svg class="workers-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
-        </div>
-
-        <div class="social-bloc">
-            <p class="footer-text">присоединяйтесь</p>
-
-            <ul class="footer-social list">
-                <li class="social-item">
-                    <a href="./index.html" class="footer-link" aria-label="instagram">
-                        <svg class="workers-icon" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#instagram-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="./index.html" class="footer-link" aria-label="twitter">
-                        <svg class="workers-icon" width="20" height="16.25">
-                            <use href="./images/symbol-defs.svg#twitter-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="./index.html" class="footer-link" aria-label="facebook">
-                        <svg class="workers-icon" width="10" height="20">
-                            <use href="./images/symbol-defs.svg#facebook-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="./index.html" class="footer-link" aria-label="linkedin">
-                        <svg class="workers-icon" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#linkedin-1"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
