@@ -149,7 +149,7 @@ img {
   content: '';
 
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 
   display: block;
@@ -267,6 +267,7 @@ img {
 
 .backdrop {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
 
